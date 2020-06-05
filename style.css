@@ -1,0 +1,139 @@
+html{
+
+  scroll-behavior: smooth;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #5CDB95; 
+    border-radius: 10px;
+  }
+  
+  
+.navbar{
+      background-color:#5CDB95 !important;    
+  }
+
+.loginbtn{
+  background-color: #5CDB95;
+  border: none;
+}
+
+.imagesize{
+  width:70px;
+  height: 40px;  
+}
+
+.effect:hover{
+  text-decoration: underline;
+}
+/* 
+.dropdown:hover>.dropdown-menu{
+  display: block;
+  background-color: antiquewhite;  
+} */
+
+.dropdown-item:hover{
+  background-color: #5CDB95;
+}
+
+
+.sliderimg{
+  width: 100%;
+  height: 320px;
+}
+
+.modal-title{
+  margin-left: 190px;
+}
+
+.btnsignin{
+  margin-left: 170px;
+}
+
+.btncreateaccount{
+  margin-left: 150px;
+}
+
+.btncard{
+  background-color: #5CDB95;
+
+}
+
+
+.card-img-top{
+  width: 18rem;
+  height: 250px;
+}
+
+
+.box{
+  box-shadow: 3px 3px grey;
+  
+}
+
+.cat-img{
+
+  height: 200px;
+  width: 200px;
+  box-shadow: 3px 3px black;
+}
+
+
+.deliveryBox{
+  width: 300px;
+  height: 200px;
+  padding-top: 40px;
+  margin-left: 110px;
+  margin-right: 10px;
+  background-color: white;
+  box-shadow:3px 3px 3px 3px grey;
+  }
+
+
+.gototop{
+
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: #5CDB95;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .btnsignin{
+    margin-left: 120px;
+  }
+
+  .btncreateaccount{
+    margin-left: 90px;
+  }
+  .modal-title{
+    margin-left: 140px;
+  }
+
+  .payment{
+    display: inline;
+  }
+
+}

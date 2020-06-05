@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Bookish Spike</title>
+</head>
+<body>
+
+  
+
+  <!-- Nav bar -->
+<div>
+  <nav class="navbar navbar-expand-lg  navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+     <img src="images/logo.png" alt="" class="imagesize">
+    </a>
+      <i><h3>Bookish Spike</h3>
+      </i>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          
+        </ul>
+        <span class="navbar-text">
+          <ul class="navbar-nav mr-auto ">
+            <li class="nav-item ">
+              <a class="nav-link effect" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle effect" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Categories
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="philosophy.html">Philosopy</a>
+                <a class="dropdown-item" href="politics.html">Politics</a>
+                <a class="dropdown-item" href="psychology.html">Psychology</a>
+                <a class="dropdown-item" href="cs.html">Computer Science</a>
+                <a class="dropdown-item" href="religion.html">Religion</a>
+                <a class="dropdown-item" href="science.html">Science</a>
+                <a class="dropdown-item" href="selfhelp.html">Self Help</a>
+              
+              
+              </div>
+            </li>
+  
+            
+            <li class="nav-item">
+  <!-- Button trigger modal -->
+  <button type="button" class="nav-link loginbtn effect" data-toggle="modal" data-target="#exampleModalCenter">
+    Login
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle" >LOGIN</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="px-4 py-3">
+            <div class="form-group">
+              <label for="exampleDropdownFormEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleDropdownFormPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                <label class="form-check-label" for="dropdownCheck">
+                  Remember me
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn loginbtn rounded-pill btnsignin">Sign in</button>
+           <br>
+            <div class="text-center mt-4">
+              <a href="">Forget Password?</a>
+            </div>
+          </form>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+            </li>
+            <li class="nav-item">
+        
+  <!-- Button trigger modal -->
+  <button type="button" class="nav-link loginbtn effect" data-toggle="modal" data-target="#SignUp">
+    Sign Up
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="SignUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered " role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle" >Sign Up</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="px-4 py-3">
+         
+            <div class="form-group">
+              <label for="exampleDropdownName1">Name</label>
+              <input type="text" class="form-control" id="exampleDropdownFormName1" placeholder="Name">
+            </div>
+        
+            <div class="form-group">
+              <label for="exampleDropdownFormContact">Contact</label>
+              <input type="text" maxlength="11" class="form-control" id="exampleDropdownFormContact" placeholder="03*********">
+            </div>
+        
+            <div class="form-group">
+              <label for="exampleDropdownFormEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+            </div>
+        
+            <div class="form-group">
+              <label for="exampleDropdownFormAddress">Address</label>
+              <input type="text" class="form-control" id="exampleDropdownFormAddress" placeholder="">
+            </div>
+        
+          <button type="submit" class="btn btncreateaccount loginbtn rounded-pill" >Create Account</button>
+           
+          </form>
+    
+        </div>
+      </div>
+    </div>
+  </div>      
+            </li>
+            <li class="nav-item">
+              <a class="nav-link effect" href="about.html">About US</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link effect" href="contact.html">Contact</a>
+            </li>
+  
+          </ul>
+      
+        </span>
+      </div>
+    </nav>
+
+</div>    
+    <!--Nav bar end  -->
+    
+  
+ <!-- Slider -->
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" style="width: 100%;">
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/Philosopy.png" class="d-block w-100 sliderimg" alt="...">
+      </div>
+    
+      <div class="carousel-item">
+        <img src="images/Politics.jpg" class="d-block w-100 sliderimg" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/Psychology.png" class="d-block w-100 sliderimg" alt="...">
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/CS.jpg" class="d-block w-100 sliderimg" alt="...">
+      </div>
+    
+      <div class="carousel-item">
+        <img src="images/Religion (1).jpg" class="d-block w-100 sliderimg" alt="...">
+      </div>
+      
+      <div class="carousel-item">
+        <img src="images/Science.jpg" class="d-block w-100 sliderimg" alt="...">
+      </div>
+    
+      <div class="carousel-item">
+        <img src="images/Self help.jpg" class="d-block w-100 sliderimg" alt="...">
+      </div>
+
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    
+  </div>
+
+  <!-- Most Read -->
+
+  <div class="text-center mt-5 pb-5" style="background-color: rgb(239, 241, 245)">
+    <div style="  background-color: #5CDB95;">
+      <h3 class="pb-3 pt-3">Most Read</h3>
+    
+    </div> 
+
+  <!-- Most read books container   -->
+   
+   <!-- container -->
+    
+   <div class="container "  >
+    
+    <div class="mt-4 row " >
+          
+      <div class="col-lg-4 col-md-6 col-sm-12  mt-4">
+       <div class="card box " style="width: 18rem;">
+         <img src="images/God.jpg" alt="" class="card-img-top">
+         <div class="card-body">
+           <h5 class="card-title">God:A Human History</h5>
+           <p class="card-text">Rs.800</p>
+           <a href="#" class="btn btncard rounded-pill">Add to Cart</a>
+         </div>
+       </div>
+      </div>
+
+
+      <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+       <div class="card box " style="width: 18rem;">
+         <img src="images/No God but God.jpg" alt="" class="card-img-top">
+         <div class="card-body">
+           <h5 class="card-title">No God But God</h5>
+           <p class="card-text">Rs.1000</p>
+           <a href="#" class="btn btncard rounded-pill">Add to Cart</a>
+         </div>
+       </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+       <div class="card box " style="width: 18rem;">
+         <img src="images/zealot.jpg" class="card-img-top" alt="...">
+         <div class="card-body">
+           <h5 class="card-title">Zealot</h5>
+           <p class="card-text">Rs.900</p>
+           <a href="#" class="btn btncard rounded-pill">Add to Cart</a>
+         </div>
+       </div>
+      </div>
+
+     
+    </div>
+  </div>  
+    <!-- container end   -->
+
+    
+      
+
+
+
+
+    <!-- 2nd container -->
+    <div class="container" >
+    
+      <div class="mt-4 row " >
+            
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-4 ">
+         <div class="card box " style="width: 18rem;">
+           <img src="images/God.jpg" alt="" class="card-img-top">
+           <div class="card-body">
+             <h5 class="card-title">God:A Human History</h5>
+             <p class="card-text">Rs.800</p>
+             <a href="#" class="btn btncard rounded-pill">Add to Cart</a>
+           </div>
+         </div>
+        </div>
+  
+  
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+         <div class="card box " style="width: 18rem;">
+           <img src="images/No God but God.jpg" alt="" class="card-img-top">
+           <div class="card-body">
+             <h5 class="card-title">No God But God</h5>
+             <p class="card-text">Rs.1000</p>
+             <a href="#" class="btn btncard rounded-pill">Add to Cart</a>
+           </div>
+         </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+         <div class="card box " style="width: 18rem;">
+           <img src="images/zealot.jpg" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h5 class="card-title">Zealot</h5>
+             <p class="card-text">Rs.900</p>
+             <a href="#" class="btn btncard rounded-pill">Add to Cart</a>
+           </div>
+         </div>
+        </div>
+  
+       
+      </div>
+    </div>  
+      <!-- container end   -->
+  
+      
+
+
+  </div>
+  <!-- most read end  -->
+
+
+  <!-- Favourites -->
+
+
+  <div class="text-center mt-5 pb-5" style="background-color: rgb(239, 241, 245)">
+    <div style="  background-color: #5CDB95;">
+      <h3 class="pb-3 pt-3">Favourites</h3>
+    
+    </div> 
+ 
+  <!-- Most faourite books container   -->
+   
+   <!-- container -->
+    
+   <div class="container "  >
+    
+    <div class="mt-4 row " >
+          
+      <div class="col-lg-4 col-md-6 col-sm-12  mt-4">
+       <div class="card box " style="width: 18rem;">
+         <img src="images/God.jpg" alt="" class="card-img-top">
+         <div class="card-body">
+           <h5 class="card-title">God:A Human History</h5>
+           <p class="card-text">Rs.800</p>
+           <a href="#" class="btn btncard rounded-pill">Add to Cart</a>
+         </div>
+       </div>
+      </div>
+
+
+      <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+       <div class="card box " style="width: 18rem;">
+         <img src="images/No God but God.jpg" alt="" class="card-img-top">
+         <div class="card-body">
+           <h5 class="card-title">No God But God</h5>
+           <p class="card-text">Rs.1000</p>
+           <a href="#" class="btn btncard rounded-pill">Add to Cart</a>
+         </div>
+       </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+       <div class="card box " style="width: 18rem;">
+         <img src="images/zealot.jpg" class="card-img-top" alt="...">
+         <div class="card-body">
+           <h5 class="card-title">Zealot</h5>
+           <p class="card-text">Rs.900</p>
+           <a href="#" class="btn btncard rounded-pill">Add to Cart</a>
+         </div>
+       </div>
+      </div>
+
+     
+    </div>
+  </div>  
+    <!-- container end   -->
+
+    
+      
+
+
+
+
+    <!-- 2nd container -->
+    <div class="container" >
+    
+      <div class="mt-4 row " >
+            
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-4 ">
+         <div class="card box " style="width: 18rem;">
+           <img src="images/God.jpg" alt="" class="card-img-top">
+           <div class="card-body">
+             <h5 class="card-title">God:A Human History</h5>
+             <p class="card-text">Rs.800</p>
+             <a href="#" class="btn btncard rounded-pill">Add to Cart</a>
+           </div>
+         </div>
+        </div>
+  
+  
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+         <div class="card box " style="width: 18rem;">
+           <img src="images/No God but God.jpg" alt="" class="card-img-top">
+           <div class="card-body">
+             <h5 class="card-title">No God But God</h5>
+             <p class="card-text">Rs.1000</p>
+             <a href="#" class="btn btncard rounded-pill">Add to Cart</a>
+           </div>
+         </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+         <div class="card box " style="width: 18rem;">
+           <img src="images/zealot.jpg" class="card-img-top" alt="...">
+           <div class="card-body">
+             <h5 class="card-title">Zealot</h5>
+             <p class="card-text">Rs.900</p>
+             <a href="#" class="btn btncard rounded-pill">Add to Cart</a>
+           </div>
+         </div>
+        </div>
+  
+       
+      </div>
+    </div>  
+      <!-- container end   -->
+  
+      
+
+
+  </div>
+  <!-- Favourites end -->
+
+
+
+  <!-- Categories -->
+
+<br><br><br>
+
+  <div class="text-center pb-5" style="background-color: rgb(239, 241, 245)">
+    <div style="  background-color: #5CDB95;">
+      <h3 class="pb-3 pt-3">Categories</h3>
+    
+    </div> 
+  
+    <div class="container pb-3 ">
+
+      <div class="row justify-content-center">
+
+        <div class="col-lg-3 col-md-4 mt-2">
+          <a href="cs.html">   
+             <img src="images/csc.jpg" alt="" class="cat-img">
+          </a>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 mt-2">
+          <a href="philosophy.html">
+            <img src="images/philosophyc.jpg" alt="" class="cat-img">
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 mt-2">
+          <a href="politics.html">
+            <img src="images/Politicsc.jpg" alt="" class="cat-img">
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 mt-2">
+          <a href="psychology.html">
+            <img src="images/psychologyc.jpg" alt="" class="cat-img">
+          </a>
+        </div>
+
+      </div>
+
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-4 col-md-4 mt-2">
+          <a href="religion.html"> 
+             <img src="images/Religionc.jpg" alt="" class="cat-img">
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-4 mt-2">
+          <a href="science.html">
+            <img src="images/Sciencec.jpg" alt="" class="cat-img">
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-4 mt-2">
+          <a href="selfhelp.html">
+            <img src="images/Self help.jpg" alt="" class="cat-img">
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  
+  </div>
+  <!-- Categories end -->
+
+
+  <!-- Payment Method start -->
+
+  <!-- style="" -->
+      
+      <div class="mt-5 pb-5" style="background-color: rgb(239, 241, 245);">
+     
+        <div style="text-align: center;  background-color: #5CDB95;">
+          <h3 class="pb-3 pt-3">Payment Method</h3>
+        
+        </div> 
+       
+        <div class="container pb-3 mt-3" >
+        
+
+          <div class="row text-center mt-4 payment" >
+  
+            <div class="col-6 mt-4">
+              
+              <div class="deliveryBox ">
+      
+                <img src="images/icons8-delivery-64.png" alt="">
+                <h5>Cash On Deleivery</h5>
+
+              </div>
+  
+            </div>
+  
+            
+            <div class="col-6  mt-4">
+              
+              <div class="deliveryBox">
+                <img src="images/icons8-split-transaction-64.png" alt="">
+                <h5>Online Payment</h5>
+                
+              </div>
+              
+            </div>
+  
+          </div>
+  
+        </div>
+  
+  
+      </div>
+
+  <!-- copyright start-->
+
+  <div class="container-fluid pb-4" style=" background-color: black;">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 pl-5 pt-5">
+         
+       <h3 class="pl-4 text-white">Contact</h3>
+        <div class="d-flex pt-3">
+
+          <img src="images/locicon.png" alt="">
+          <p class="mt-3 text-white">Flat B-39 Gulshane Iqbal Karachi</p>
+        
+        </div>
+
+        <div class="d-flex">
+          <img src="images/icons8-important-mail-100.png"  alt="" style="width: 50px; height: 70px;">
+          <p class="mt-4 text-white">talalahmedqurashi123@gmail.com</p>
+        </div>
+
+        <div class="d-flex">
+          <img src="images/icons8-telephone-100.png" alt="" style="width: 40px; height: 50px;">
+          <p class="mt-2 text-white">+(92) 3113302963</p>
+        </div>
+  
+      </div>
+
+
+      <div class="col-lg-6 col-md-12 pl-5 pt-5 text-white">
+        <h3>About Us</h3>
+        <div style="width: 400px; height: 130px;  " >
+        <p>We are providing you best services for deleivery.
+          Providing best Soft copy of Books
+        </p>
+
+        </div>
+
+        <div class="" >
+          <img class="ml-1" src="images/icons8-facebook-old-48.png" alt="">
+          <img class="ml-1" src="images/icons8-instagram-64.png" alt="">
+          <img class="ml-1" src="images/icons8-twitter-48.png" alt="">
+          <img class="ml-1" src="images/icons8-whatsapp-48.png" alt="">
+          <img class="ml-1" src="images/icons8-youtube-64.png" alt="">
+        </div>
+        </div>
+        
+    </div>
+  </div>
+
+  <div class="pt-2 pb-2 " style="background-color: #5CDB95; text-align:center;">
+
+    <div class="d-inline-flex ">
+      <h5>copyright</h5>              
+      <i class="fa fa-copyright mt-2 mr-2" aria-hidden="true" ></i>
+      <h5>2020,Bookish Spike,All Rights Reserved</h5>
+ 
+    </div>
+
+  </div>
+  
+
+
+    <a href="" class="gototop">  <i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
